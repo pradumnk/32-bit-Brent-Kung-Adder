@@ -1,0 +1,76 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do test1_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:22:24 on Oct 20,2021
+# vcom -reportprogress 300 -93 -work work D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity and2x1
+# -- Compiling architecture df of and2x1
+# ** Warning: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd(9): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# -- Compiling entity xor2x1
+# -- Compiling architecture df of xor2x1
+# ** Warning: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd(19): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# -- Compiling entity func3x1
+# -- Compiling architecture df of func3x1
+# ** Warning: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd(29): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# -- Compiling entity sum_carry_box
+# -- Compiling architecture df of sum_carry_box
+# -- Compiling entity gen_pen_box
+# -- Compiling architecture arc of gen_pen_box
+# -- Compiling entity krung_adder_32bit
+# -- Compiling architecture structural of krung_adder_32bit
+# End time: 09:22:25 on Oct 20,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 3
+# 
+# vcom -93 -work work {D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder TestBench.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:22:25 on Oct 20,2021
+# vcom -reportprogress 300 -93 -work work D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder TestBench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Compiling entity test_adder
+# -- Compiling architecture tb of test_adder
+# ** Warning: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder TestBench.vhd(44): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 09:22:25 on Oct 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  test_adder
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" test_adder 
+# Start time: 09:22:25 on Oct 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.test_adder(tb)
+# Loading work.krung_adder_32bit(structural)
+# Loading work.and2x1(df)
+# Loading work.xor2x1(df)
+# Loading work.gen_pen_box(arc)
+# Loading work.func3x1(df)
+# Loading work.sum_carry_box(df)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: Success
+#    Time: 164 us  Iteration: 0  Instance: /test_adder

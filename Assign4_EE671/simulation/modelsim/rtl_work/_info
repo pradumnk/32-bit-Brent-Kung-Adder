@@ -1,0 +1,287 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Documents/Quartus Projects/Assign4_EE671/simulation/modelsim
+Eand2x1
+Z1 w1634657884
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd
+Z5 FD:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd
+l0
+L5
+VM@M8j^jRQ1BZa9_5NmOhl2
+!s100 ZHl`4]nDF3`]IEkZEDA4I0
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1634701945
+!i10b 1
+Z8 !s108 1634701944.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd|
+Z10 !s107 D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Adf
+R2
+R3
+DEx4 work 6 and2x1 0 22 M@M8j^jRQ1BZa9_5NmOhl2
+l8
+L8
+Vmkb1Sck8KU8HniIc;j:9h2
+!s100 QikB6:R[FHj^Q5KC2fo8C2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Efunc3x1
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L25
+Vml[3TWaH;C0bo0`Qe<:?D3
+!s100 ]FA=CZ2ROP<^XKQ@<bAD<3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Adf
+R2
+R3
+DEx4 work 7 func3x1 0 22 ml[3TWaH;C0bo0`Qe<:?D3
+l28
+L28
+VlCH=iUjCN@>:O@_2oN?181
+!s100 XDgNViC;9Xfcz1?cn[@6b0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Egen_pen_box
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L53
+V7:KoE<VZj3LX9^0XaY^PK1
+!s100 dd=UM?94MG^klRJ8K[SkG0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aarc
+R2
+R3
+DEx4 work 11 gen_pen_box 0 22 7:KoE<VZj3LX9^0XaY^PK1
+l63
+L56
+VVOXdB8;1Fm=dLiPZ80nUQ3
+!s100 3iSi8A<1z2@7K^G1^<KhR3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ekrung_adder_32bit
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L71
+VQb?a?gaV>CaOS_[^5f1QS1
+!s100 Ae3O;jX]kbd:cEb]6Z?z:0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 17 krung_adder_32bit 0 22 Qb?a?gaV>CaOS_[^5f1QS1
+l99
+L76
+VMTY:jlZ]<F1WB4?9QlZJ?1
+!s100 L6heBgfQE^2O@V5gVPQW>1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Esum_carry_box
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L35
+V_]0:ogSckdCDTk_<I1OBM1
+!s100 SYQzL440<Nlc=hX?34X@@3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Adf
+R2
+R3
+DEx4 work 13 sum_carry_box 0 22 _]0:ogSckdCDTk_<I1OBM1
+l45
+L38
+VElRN0aNjo6ClclJAn<HnX3
+!s100 Dd7QfQH9;nWokJ?jg2nKN0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etest_adder
+Z13 w1634651989
+Z14 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z15 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R0
+Z16 8D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder TestBench.vhd
+Z17 FD:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder TestBench.vhd
+l0
+L8
+VKL`O]Q^VTTZ>dIkMQXD^N3
+!s100 Y`S@gnQilUH3X6MR7bPQ[3
+R6
+31
+R7
+!i10b 1
+Z18 !s108 1634701945.000000
+Z19 !s90 -reportprogress|300|-93|-work|work|D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder TestBench.vhd|
+Z20 !s107 D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder TestBench.vhd|
+!i113 1
+R11
+R12
+Atb
+R14
+R15
+R2
+R3
+DEx4 work 10 test_adder 0 22 KL`O]Q^VTTZ>dIkMQXD^N3
+l21
+L11
+V]]k32o8VPe_6>KYgNkk5A2
+!s100 b0ja0]>A;k[h]2HPHj3V^2
+R6
+31
+R7
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R11
+R12
+Exor2x1
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L15
+V?<cZ[aR3h8M5]MF5D35fJ0
+!s100 VWe[F=ldfVfSenzc4V9ba2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Adf
+R2
+R3
+DEx4 work 6 xor2x1 0 22 ?<cZ[aR3h8M5]MF5D35fJ0
+l18
+L18
+VS69L2Na[I<Q=I1dMh]9DE1
+!s100 HkS:6Tg2PI6]RN7b<J@FV3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12

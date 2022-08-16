@@ -1,0 +1,529 @@
+Analysis & Synthesis report for test1
+Tue Oct 19 21:08:19 2021
+Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "gen_pen_box:label7"
+ 10. Port Connectivity Checks: "gen_pen_box:\stage4:4:label5"
+ 11. Port Connectivity Checks: "gen_pen_box:\stage3:8:label4"
+ 12. Port Connectivity Checks: "gen_pen_box:\stage3:7:label4"
+ 13. Port Connectivity Checks: "gen_pen_box:\stage3:6:label4"
+ 14. Port Connectivity Checks: "gen_pen_box:\stage2:16:label3"
+ 15. Port Connectivity Checks: "gen_pen_box:\stage2:15:label3"
+ 16. Port Connectivity Checks: "gen_pen_box:\stage2:14:label3"
+ 17. Port Connectivity Checks: "gen_pen_box:\stage2:13:label3"
+ 18. Port Connectivity Checks: "gen_pen_box:\stage2:12:label3"
+ 19. Port Connectivity Checks: "gen_pen_box:\stage2:11:label3"
+ 20. Port Connectivity Checks: "gen_pen_box:\stage2:10:label3"
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Tue Oct 19 21:08:19 2021       ;
+; Quartus Prime Version           ; 18.1.1 Build 646 04/11/2019 SJ Lite Edition ;
+; Revision Name                   ; test1                                       ;
+; Top-level Entity Name           ; krung_adder_32bit                           ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 98                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; krung_adder_32bit  ; test1              ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                  ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                           ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
+; Brent Kung Adder parts.vhd       ; yes             ; User VHDL File  ; D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                              ;
++---------------------------------------------+------------------------------------------------------------+
+; Resource                                    ; Usage                                                      ;
++---------------------------------------------+------------------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 41                                                         ;
+;                                             ;                                                            ;
+; Combinational ALUT usage for logic          ; 63                                                         ;
+;     -- 7 input functions                    ; 0                                                          ;
+;     -- 6 input functions                    ; 18                                                         ;
+;     -- 5 input functions                    ; 8                                                          ;
+;     -- 4 input functions                    ; 6                                                          ;
+;     -- <=3 input functions                  ; 31                                                         ;
+;                                             ;                                                            ;
+; Dedicated logic registers                   ; 0                                                          ;
+;                                             ;                                                            ;
+; I/O pins                                    ; 98                                                         ;
+;                                             ;                                                            ;
+; Total DSP Blocks                            ; 0                                                          ;
+;                                             ;                                                            ;
+; Maximum fan-out node                        ; sum_carry_box:\sum_car_generation:1:label9|func3x1:carry|f ;
+; Maximum fan-out                             ; 4                                                          ;
+; Total fan-out                               ; 381                                                        ;
+; Average fan-out                             ; 1.47                                                       ;
++---------------------------------------------+------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                         ;
++--------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node                       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                          ; Entity Name       ; Library Name ;
++--------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------+-------------------+--------------+
+; |krung_adder_32bit                               ; 63 (0)              ; 0 (0)                     ; 0                 ; 0          ; 98   ; 0            ; |krung_adder_32bit                                                           ; krung_adder_32bit ; work         ;
+;    |and2x1:\stage1:14:label1|                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|and2x1:\stage1:14:label1                                  ; and2x1            ; work         ;
+;    |and2x1:\stage1:19:label1|                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|and2x1:\stage1:19:label1                                  ; and2x1            ; work         ;
+;    |and2x1:\stage1:24:label1|                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|and2x1:\stage1:24:label1                                  ; and2x1            ; work         ;
+;    |and2x1:\stage1:29:label1|                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|and2x1:\stage1:29:label1                                  ; and2x1            ; work         ;
+;    |and2x1:\stage1:4:label1|                     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|and2x1:\stage1:4:label1                                   ; and2x1            ; work         ;
+;    |and2x1:\stage1:9:label1|                     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|and2x1:\stage1:9:label1                                   ; and2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:10:label9| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:10:label9               ; sum_carry_box     ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:10:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:11:label9| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:11:label9               ; sum_carry_box     ; work         ;
+;       |func3x1:carry|                            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:11:label9|func3x1:carry ; func3x1           ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:11:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:12:label9| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:12:label9               ; sum_carry_box     ; work         ;
+;       |func3x1:carry|                            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:12:label9|func3x1:carry ; func3x1           ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:12:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:13:label9| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:13:label9               ; sum_carry_box     ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:13:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:14:label9| ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:14:label9               ; sum_carry_box     ; work         ;
+;       |func3x1:carry|                            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:14:label9|func3x1:carry ; func3x1           ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:14:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:15:label9| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:15:label9               ; sum_carry_box     ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:15:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:16:label9| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:16:label9               ; sum_carry_box     ; work         ;
+;       |func3x1:carry|                            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:16:label9|func3x1:carry ; func3x1           ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:16:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:17:label9| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:17:label9               ; sum_carry_box     ; work         ;
+;       |func3x1:carry|                            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:17:label9|func3x1:carry ; func3x1           ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:17:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:18:label9| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:18:label9               ; sum_carry_box     ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:18:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:19:label9| ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:19:label9               ; sum_carry_box     ; work         ;
+;       |func3x1:carry|                            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:19:label9|func3x1:carry ; func3x1           ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:19:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:1:label9|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:1:label9                ; sum_carry_box     ; work         ;
+;       |func3x1:carry|                            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:1:label9|func3x1:carry  ; func3x1           ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:1:label9|xor2x1:sum     ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:20:label9| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:20:label9               ; sum_carry_box     ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:20:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:21:label9| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:21:label9               ; sum_carry_box     ; work         ;
+;       |func3x1:carry|                            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:21:label9|func3x1:carry ; func3x1           ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:21:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:22:label9| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:22:label9               ; sum_carry_box     ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:22:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:23:label9| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:23:label9               ; sum_carry_box     ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:23:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:24:label9| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:24:label9               ; sum_carry_box     ; work         ;
+;       |func3x1:carry|                            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:24:label9|func3x1:carry ; func3x1           ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:24:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:25:label9| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:25:label9               ; sum_carry_box     ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:25:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:26:label9| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:26:label9               ; sum_carry_box     ; work         ;
+;       |func3x1:carry|                            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:26:label9|func3x1:carry ; func3x1           ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:26:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:27:label9| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:27:label9               ; sum_carry_box     ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:27:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:28:label9| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:28:label9               ; sum_carry_box     ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:28:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:29:label9| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:29:label9               ; sum_carry_box     ; work         ;
+;       |func3x1:carry|                            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:29:label9|func3x1:carry ; func3x1           ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:29:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:2:label9|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:2:label9                ; sum_carry_box     ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:2:label9|xor2x1:sum     ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:30:label9| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:30:label9               ; sum_carry_box     ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:30:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:31:label9| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:31:label9               ; sum_carry_box     ; work         ;
+;       |func3x1:carry|                            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:31:label9|func3x1:carry ; func3x1           ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:31:label9|xor2x1:sum    ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:3:label9|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:3:label9                ; sum_carry_box     ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:3:label9|xor2x1:sum     ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:4:label9|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:4:label9                ; sum_carry_box     ; work         ;
+;       |func3x1:carry|                            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:4:label9|func3x1:carry  ; func3x1           ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:4:label9|xor2x1:sum     ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:5:label9|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:5:label9                ; sum_carry_box     ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:5:label9|xor2x1:sum     ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:6:label9|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:6:label9                ; sum_carry_box     ; work         ;
+;       |func3x1:carry|                            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:6:label9|func3x1:carry  ; func3x1           ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:6:label9|xor2x1:sum     ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:7:label9|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:7:label9                ; sum_carry_box     ; work         ;
+;       |func3x1:carry|                            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:7:label9|func3x1:carry  ; func3x1           ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:7:label9|xor2x1:sum     ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:8:label9|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:8:label9                ; sum_carry_box     ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:8:label9|xor2x1:sum     ; xor2x1            ; work         ;
+;    |sum_carry_box:\sum_car_generation:9:label9|  ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:9:label9                ; sum_carry_box     ; work         ;
+;       |func3x1:carry|                            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:9:label9|func3x1:carry  ; func3x1           ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:\sum_car_generation:9:label9|xor2x1:sum     ; xor2x1            ; work         ;
+;    |sum_carry_box:label8|                        ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:label8                                      ; sum_carry_box     ; work         ;
+;       |xor2x1:sum|                               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|sum_carry_box:label8|xor2x1:sum                           ; xor2x1            ; work         ;
+;    |xor2x1:\stage1:14:label2|                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|xor2x1:\stage1:14:label2                                  ; xor2x1            ; work         ;
+;    |xor2x1:\stage1:19:label2|                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|xor2x1:\stage1:19:label2                                  ; xor2x1            ; work         ;
+;    |xor2x1:\stage1:24:label2|                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|xor2x1:\stage1:24:label2                                  ; xor2x1            ; work         ;
+;    |xor2x1:\stage1:29:label2|                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|xor2x1:\stage1:29:label2                                  ; xor2x1            ; work         ;
+;    |xor2x1:\stage1:4:label2|                     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|xor2x1:\stage1:4:label2                                   ; xor2x1            ; work         ;
+;    |xor2x1:\stage1:9:label2|                     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |krung_adder_32bit|xor2x1:\stage1:9:label2                                   ; xor2x1            ; work         ;
++--------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------+-------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "gen_pen_box:label7"                                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; gi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "gen_pen_box:\stage4:4:label5"                                                       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; gi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "gen_pen_box:\stage3:8:label4"                                                       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; gi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "gen_pen_box:\stage3:7:label4"                                                       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; gi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "gen_pen_box:\stage3:6:label4"                                                       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; gi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "gen_pen_box:\stage2:16:label3"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; gi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "gen_pen_box:\stage2:15:label3"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; gi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "gen_pen_box:\stage2:14:label3"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; gi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "gen_pen_box:\stage2:13:label3"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; gi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "gen_pen_box:\stage2:12:label3"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; gi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "gen_pen_box:\stage2:11:label3"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; gi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "gen_pen_box:\stage2:10:label3"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; gi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pi1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 63                          ;
+;     normal            ; 63                          ;
+;         2 data inputs ; 15                          ;
+;         3 data inputs ; 16                          ;
+;         4 data inputs ; 6                           ;
+;         5 data inputs ; 8                           ;
+;         6 data inputs ; 18                          ;
+; boundary_port         ; 98                          ;
+;                       ;                             ;
+; Max LUT depth         ; 13.00                       ;
+; Average LUT depth     ; 7.91                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
+    Info: Processing started: Tue Oct 19 21:08:07 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BrentKungAdder -c test1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 12 design units, including 6 entities, in source file brent kung adder parts.vhd
+    Info (12022): Found design unit 1: and2x1-df File: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd Line: 8
+    Info (12022): Found design unit 2: xor2x1-df File: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd Line: 18
+    Info (12022): Found design unit 3: func3x1-df File: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd Line: 28
+    Info (12022): Found design unit 4: sum_carry_box-df File: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd Line: 38
+    Info (12022): Found design unit 5: gen_pen_box-arc File: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd Line: 56
+    Info (12022): Found design unit 6: krung_adder_32bit-structural File: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd Line: 76
+    Info (12023): Found entity 1: and2x1 File: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd Line: 5
+    Info (12023): Found entity 2: xor2x1 File: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd Line: 15
+    Info (12023): Found entity 3: func3x1 File: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd Line: 25
+    Info (12023): Found entity 4: sum_carry_box File: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd Line: 35
+    Info (12023): Found entity 5: gen_pen_box File: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd Line: 53
+    Info (12023): Found entity 6: krung_adder_32bit File: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd Line: 71
+Info (12021): Found 2 design units, including 1 entities, in source file brent kung adder testbench.vhd
+    Info (12022): Found design unit 1: test_adder-tb File: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder TestBench.vhd Line: 11
+    Info (12023): Found entity 1: test_adder File: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder TestBench.vhd Line: 8
+Info (12127): Elaborating entity "krung_adder_32bit" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at Brent Kung Adder parts.vhd(97): object "g6" assigned a value but never read File: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd Line: 97
+Warning (10036): Verilog HDL or VHDL warning at Brent Kung Adder parts.vhd(97): object "p6" assigned a value but never read File: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd Line: 97
+Info (12128): Elaborating entity "and2x1" for hierarchy "and2x1:\stage1:0:label1" File: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd Line: 101
+Info (12128): Elaborating entity "xor2x1" for hierarchy "xor2x1:\stage1:0:label2" File: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd Line: 102
+Info (12128): Elaborating entity "gen_pen_box" for hierarchy "gen_pen_box:\stage2:1:label3" File: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd Line: 106
+Info (12128): Elaborating entity "func3x1" for hierarchy "gen_pen_box:\stage2:1:label3|func3x1:label1" File: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd Line: 64
+Info (12128): Elaborating entity "sum_carry_box" for hierarchy "sum_carry_box:label8" File: D:/Documents/Quartus Projects/Assign4_EE671/Brent Kung Adder parts.vhd Line: 123
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 161 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 65 input pins
+    Info (21059): Implemented 33 output pins
+    Info (21061): Implemented 63 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4843 megabytes
+    Info: Processing ended: Tue Oct 19 21:08:19 2021
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:27
+
+
